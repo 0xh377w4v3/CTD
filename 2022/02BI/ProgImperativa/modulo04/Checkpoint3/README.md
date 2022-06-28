@@ -10,7 +10,7 @@ Vamos realizar uma série de exercícios conectados entre si. O objetivo é trab
 
 # 📌 **Passo 1 (1,5 pontos)**
 
-Crie uma função construtora que tenha como atributos: *`nome* (string)`, *`quantidade de faltas* (number)` e *`notas* (array de números)`.
+Crie uma função construtora que tenha como atributos: `nome (string)`, `quantidade de faltas (number)` e `notas (array de números)`.
 
 # 📌 **Passo 2 (1,5 pontos)**
 
@@ -18,11 +18,11 @@ Na função construtora crie o método **calcularMedia** que retorna a média de
 
 # 📌 **Passo 3 (1,5 pontos)**
 
-crie o objeto literal *`curso`* que tem como atributos: *`nome do curso* (string)`, `*nota de aprovação* (number)`, *`faltas máximas* (number)` e uma *`lista de estudantes* (um array composto pelos alunos criados no passo 2)`.
+crie o objeto literal `curso` que tem como atributos: `nome do curso (string)`, `nota de aprovação* (number)`, `faltas máximas (number)` e uma `lista de estudantes (um array composto pelos alunos criados no passo 2)`.
 
 # 📌 **Passo 4 (1,5 pontos)**
 
-Crie o método que permite adicionar alunos à lista do curso, ou seja, quando chamamos nosso método em nosso objeto *`curso`*, deverá adicionar um aluno a mais na propriedade *`lista de estudantes`* do objeto *`curso`*.
+Crie o método que permite adicionar alunos à lista do curso, ou seja, quando chamamos nosso método em nosso objeto *`curso`*, deverá adicionar um aluno a mais na propriedade `lista de estudantes` do objeto `curso`.
 
 # 📌 **Passo 5 (2 pontos)**
 
