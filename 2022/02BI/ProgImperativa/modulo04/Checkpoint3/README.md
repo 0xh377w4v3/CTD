@@ -10,7 +10,7 @@ Vamos realizar uma série de exercícios conectados entre si. O objetivo é trab
 
 ### 📌 **Passo 1 (1,5 pontos)**
 
-Crie uma função construtora que tenha como atributos: `nome (string)`, `quantidade de faltas (number)` e `notas (array de números)`.
+Crie uma função construtora que tenha como atributos: `nome (string)`, `notas (array de números)` e `quantidade de faltas (number)`.
 
 ### 📌 **Passo 2 (1,5 pontos)**
 
