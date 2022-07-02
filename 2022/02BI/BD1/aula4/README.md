@@ -1,5 +1,3 @@
-# Untitled
-
 # **Parte 1 - App de pedidos online**
 
 ## **“Os restaurantes”**
