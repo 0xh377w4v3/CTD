@@ -8,7 +8,7 @@ Observação:
 
 O DER a seguir o ajudará a entender e usar as relações entre as diferentes tabelas:
 
-![Untitled](Untitled%20aaa08115429b4b218055db0758edcbfa/Untitled.png)
+![Untitled](example/example.png)
 
 ### **Relatórios II parte I - Revisando INNER JOIN**
 
