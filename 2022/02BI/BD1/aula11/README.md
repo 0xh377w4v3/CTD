@@ -12,7 +12,7 @@ Na base e-Market, existem 13 tabelas, a saber:
 - **ClientesDemo:** esta tabela estará vazia
 - **ClientesDemografia:** esta tabela estará vazia
 - **Correios:** Nome e telefone das empresas de transporte
-- **DetalheFatura:** Detalhe do que foic omprado em cada fatura
+- **DetalheFatura:** Detalhe do que foi comprado em cada fatura
 - **EmpregadoLocalizacao:** Lista da localização de cada funcionário
 - **Fornecedores:** Lista dos fornecedores que fornecem os produtos
 - **Funcionários:** Lista de funcionário responsáveis pela venda
