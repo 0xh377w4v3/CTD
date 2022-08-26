@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Anek Malayalam', sans-serif;
+  font-weight: 500;
+}
+
+html {
+  font-size: 10px;
+  
+  scroll-behavior: smooth;
+}
+
+:root {
+  --colorText: #222222;
+  --colorBackground: #ffffff;
+  --colorHomeMenu: #e51b3e;
+  --colorDestaque: #000000;
+  --colorBackgroundCard: #f4f4f4;
+  --colorBackgroundFooter: #171717;
+  --colorBackgroundFooterText1: rgba(255, 255, 255, 0.75);
+  --colorBackgroundFooterText2: rgba(255, 255, 255, 0.5);
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--colorBackground);
+  text-align: center;
+  align-items: center;
+  font-weight: 400;
+  width: 100%;
+  height: 20vh;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+ul.menu {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+#colorRed {
+  color: var(--colorHomeMenu);
+}
+
+ul.menu li {
+  list-style: none;
+}
+
+ul.menu a {
+  text-decoration: none;
+  color: var(--colorText);
+  font-size: 1.5rem;
+}
+
+.banner-detalhes {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%), url(../img/banner-detalhes.jpg);
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+
+   /* parallax */
+   background-attachment: fixed;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+.titulo1-detalhes {
+  color: var(--colorDestaque);
+  align-items: flex-start;
+  font-size: 4rem;
+  margin-left: 10%;
+  padding-top: 30px;
+}
+
+.instrumentos {
+  display: flex;
+  flex-direction: row;
+  width: 30px;
+  height: 30px;
+  margin-left: 10%;
+  gap: 8px;
+}
+
+.paragrafo {
+  color: var(--colorDestaque);
+  font-size: 1.5rem;
+  margin-left: 10%;
+  padding-top: 30px;
+  padding-right: 10%;
+  text-align: justify;
+}
+
+.titulo-integrantes {
+  display: flex;
+  flex-direction: row;
+  color: var(--colorDestaque);
+  align-items: flex-start;
+  font-size: 2rem;
+  gap: 130px;
+  margin-left: 10%;
+  padding-top: 30px;
+}
+
+.integrantes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: rgb(0, 102, 255);
+  align-items: flex-start;
+  font-size: 1.3rem;
+  padding-top: 5px;
+  gap: 30px;
+  margin-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 20px;
+}
+
+.titulo-estilo {
+  display: flex;
+  flex-direction: row;
+  color: var(--colorDestaque);
+  align-items: flex-start;
+  font-size: 2rem;
+  gap: 130px;
+  margin-left: 10%;
+}
+
+.estilo {
+  display: flex;
+  flex-direction: row;
+  color: rgb(0, 102, 255);
+  align-items: flex-start;
+  font-size: 1.3rem;
+  padding-top: 10px;
+  gap: 10px;
+  margin-left: 10%;
+  padding-bottom: 40px;
+}
+
+.titulo3-detalhes {
+  display: flex;
+  flex-direction: row;
+  color: var(--colorDestaque);
+  align-items: flex-start;
+  font-size: 3rem;
+  gap: 130px;
+  margin-left: 10%;
+  padding-bottom: 10px;
+}
+
+.clipe {
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 700px;
+  margin-left: 10%;
+  box-shadow: 0px 0px 21px 0px rgba(97, 97, 97, 0.82);
+}
+
+footer {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--colorBackgroundFooter);
+  box-shadow: 0px 0px 21px 0px rgba(97, 97, 97, 0.82);
+}
+
+section.github {
+  display: flex;
+  justify-content: space-around;
+  margin: 2%;
+  align-items: center;
+  color: var(--colorBackground);
+  font-size: 1.2rem;
+}
+
+.github h5 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5px;
+  font-size: 1.5rem;
+}
+
+div.text-footer {
+  font-size: 1.3rem;
+  text-align: center;
+  margin: 2%;
+  color: var(--colorBackgroundFooterText2);
+}
+
+.cardSpace {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  gap: 20px;
+}
+
+.cardAluno {
+  color: var(--colorBackgroundFooterText1);
+  margin: 10px;
+  text-align: left;
+}
+
+/* Media query iPhone 13 Pro Max */
+
+@media only screen and (max-width: 428px)
+  {
+    .logo-mobile {
+      width: 200px;
+      height: 70px;
+    }
+
+    .logo:hover {
+      transform: scale(1.1);
+      transition: 0.3s;
+    }
+
+    ul.menu a {
+      text-decoration: none;
+      color: var(--colorText);
+      font-size: 1.8rem;
+      padding: 10px;
+    }
+
+    li:hover {
+      transition: 0.5;
+      transform: scale(1.1);
+    }
+
+    .titulo1-detalhes {
+      display: flex;
+      justify-content: center;
+      margin-right: 10%;
+      padding-bottom: 15px;
+      color: inherit;
+    }
+    
+    .nomedabanda {
+      padding-bottom: 15px;
+      font-size: 9rem;
+    }
+    .instrumentos {
+      display: flex;
+      margin-left: 30%;
+    }
+
+    .paragrafo {
+      font-size: 1.7rem;
+      padding: 20px;
+      margin-left: 0;
+      text-align: justify;
+    }
+    
+    .titulo-integrantes {
+      display: flex;
+      justify-content: center;
+      margin-right: 10%;
+      font-size: 30px;
+      padding-bottom: 10px;
+    }
+    
+    .integrantes {
+      display: flex;
+      justify-content: center;
+      font-size: 20px;
+    }
+    
+    .titulo-estilo {
+      display: flex;
+      justify-content: center;
+      margin-right: 10%;
+      gap: 130px;
+      margin-left: 10%;
+      font-size: 30px;
+      padding-bottom: 10px;
+    }
+    
+    .estilo {
+      display: flex;
+      justify-content: center;
+      margin-right: 10%;
+      padding-bottom: 40px;
+      font-size: 20px;
+    }
+    
+    .titulo3-detalhes {
+      display: flex;
+      justify-content: center;
+      margin-right: 10%;
+    }
+    
+    .clipe {
+      width: 95%;
+      height: 250px;
+      margin-left: 2.5%;
+      margin-right: 2.5%;
+    }
+
+    .githib {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .aluno {
+      font-size: 2.3rem;
+      padding-bottom: 5px;
+    }
+
+    .cardAluno1 {
+      font-size: 15px;
+      text-align: center;
+    }
+
+    .cardAluno2 {
+      font-size: 15px;
+      text-align: center;
+    }
+
+    .cardAluno3 {
+      font-size: 15px;
+      text-align: center;
+    }
+
+    .cardAluno4 {
+      font-size: 15px;
+      text-align: center;
+    }
+    
+  }

@@ -1,0 +1,608 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Anek Malayalam', sans-serif;
+  font-weight: 500;
+}
+
+html {
+  font-size: 10px;
+  font-family: 'Anek Malayalam', sans-serif;
+  font-weight: 500;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --colorText: #171717;
+  --colorBackground: #ffffff;
+  --colorHomeMenu: #e51b3e;
+  --colorDestaque: #000000;
+  --colorBtnCard: #33bb69;
+  --colorBackgroundCard: #f4f4f4;
+  --colorBackgroundFooter: #171717;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--colorBackground);
+  text-align: center;
+  align-items: center;
+  font-weight: 400;
+  width: 100%;
+  height: 10vh;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+ul.menu {
+  display: flex;
+  gap: 15px;
+}
+
+#colorRed {
+  color: var(--colorHomeMenu);
+}
+
+#colorRed:hover {
+  color: #171717;
+  transition: 0.5s;
+  transform: scale(1.05);
+}
+
+ul.menu li {
+  list-style: none;
+}
+
+ul.menu a {
+  text-decoration: none;
+  color: var(--colorText);
+  font-size: 1.5rem;
+}
+
+.list:hover {
+  color: #e51b3e;
+  transition: 0.5s;
+  transform: scale(1.05);
+}
+
+section.banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%), url(../img/background.jpg);
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  text-align: center;
+  /* parallax */
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position: center; */
+}
+
+.btn-explorer {
+  width: 200px;
+  height: 50px;
+  color: var(--colorBackground);
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-radius: 12px;
+}
+
+.descricao {
+  padding-bottom: 30px;
+}
+
+section.banner p {
+  color: #ffffff;
+  font-size: 3rem;
+}
+
+.tituloCards {
+  text-align: center;
+  color: var(--colorDestaque);
+  font-weight: bold;
+  font-size: 3.5rem;
+  margin-top: 30px;
+}
+
+section.itens {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 50px;
+}
+
+/* Card */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  height: 666px;
+  width: 450px;
+  border-style: none;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  background-color: var(--colorBackgroundCard);
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-img-top {
+  border-radius: 15px 15px 0 0;
+  height: 300px;
+}
+
+.card-title {
+  text-align: left;
+  font-size: 2rem;
+  margin-top: 20px;
+}
+
+.card-text {
+  font-size: 1.4rem;
+  text-align: justify;
+  height: 175px;
+}
+
+.btn-abrir {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 200px;
+  height: 50px;
+  color: #00000057;
+  border-color: var(--colorBtnCard);
+  background-color: #ffffffb4;
+  box-shadow: 0px 0px 21px 0px rgba(97, 97, 97, 0.82);
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-radius: 12px;
+  margin-top: 50px;
+}
+
+.btn-abrir-banda {
+  color: #afafaf;
+  animation: glow 1.8s ease-in infinite;
+}
+
+@keyframes glow {
+  0% {
+    background-color: #17171784;
+  }
+  10% {
+    background-color: #38383884;
+  }
+  20% {
+    background-color: #50505084;
+  }
+  30% {
+    background-color: #73737384;
+  }
+  40% {
+    background-color: #8d8d8d84;
+  }
+  50% {
+    background-color: #a8a8a884;
+  }
+  60% {
+    background-color: #bfbfbf84;
+  }
+  70% {
+    background-color: #d2d2d284;
+  }
+  80% {
+    background-color: #e1e1e184;
+  }
+  90% {
+    background-color: #f4f4f484;
+  }
+}
+
+.btn-abrir:hover {
+  color: #00000062;
+  background-color: rgba(255, 0, 76, 0.82);
+  box-shadow: 0px 0px 21px 0px rgba(255, 0, 76, 0.82);
+  border-color: rgba(255, 0, 76, 0.82);
+  transition: 1s;
+  transform: scale(1.05);
+}
+
+/* Footer */
+
+footer section.github {
+  display: flex;
+  color: var(--colorBackground);
+  font-size: 1.5rem;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer div.cardAluno {
+  text-align: center;
+}
+
+.divicon {
+  display: block;
+  margin-top: 100px;
+}
+
+.icon {
+  padding-right: 10px;
+}
+
+/*  Login Início */
+
+.modal-content {
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 12px;
+  background-color: #000000;
+}
+
+.modal-body {
+  padding: 0;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  text-decoration: none;
+  color: #f4f4f4;
+  border-color: var(--colorBtnCard);
+  box-shadow: 0px 0px 21px 0px rgba(51, 187, 105, 0.82);
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.botoes{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 100px;
+}
+
+.btn:hover {
+  color: #f4f4f4;
+  background-color: rgba(255, 0, 76, 0.82);
+  box-shadow: 0px 0px 21px 0px rgba(255, 0, 76, 0.82);
+  border-color: rgba(255, 0, 76, 0.82);
+  transition: 1s;
+  transform: scale(1.05);
+}
+
+.btn-close {
+  position: absolute;
+  right: 0;
+  padding: 1em;
+}
+
+.itens-titulo {
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 30px;
+  color: #000000;
+}
+
+h1 {
+  font-size: 9rem;
+  font-weight: bold;
+  text-shadow: 0 0 15px rgba(229, 27, 62, 0.5), 0 0 10px rgba(229, 27, 62, 0.5),
+    2px 2px 2px rgba(229, 27, 62, 0);
+  text-align: center;
+  color: #e51b3e;
+}
+
+h1:hover {
+  text-shadow: 0 0 15px rgba(51, 187, 105, 0.5),
+    0 0 10px rgba(51, 187, 105, 0.5), 2px 2px 2px rgba(51, 187, 105, 0);
+  color: var(--colorBtnCard);
+  transition: 0.5s;
+}
+
+.myform {
+  padding: 2em;
+  max-width: 100%;
+  color: #fff;
+  box-shadow: 0 4px 6px 0 rgba(22, 22, 26, 0.18);
+  border-radius: 10px;
+  @media (max-width: 576px) {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+
+.form-control:focus {
+  background-color: #33bb6965;
+  color: var(--colorBackground);
+  box-shadow: inset 0 -1px 0 #7e7e7e;
+  border-radius: 3px;
+  font-size: 1.5rem;
+}
+
+.form-control {
+  background-color: inherit;
+  color: var(--colorBackground);
+  padding-left: 0;
+  border: 0;
+  border-radius: 0;
+  border-bottom: 1px solid var(--colorBackground);
+  font-size: 1.5rem;
+}
+
+.myform .btn {
+  width: 100%;
+  font-weight: 800;
+  background-color: #171717;
+  border-radius: 3px;
+  padding: 0.5em 0;
+}
+
+.myform .btn:hover {
+  background-color: inherit;
+  color: #e51b3e;
+  border-color: #e51b3e;
+}
+
+.bg-dark {
+  box-shadow: 0px 0px 17px 0px var(--colorBtnCard);
+}
+
+.card p {
+  text-align: center;
+  padding-top: 2em;
+  color: grey;
+}
+
+p a {
+  color: #e1e1e1;
+  text-decoration: none;
+}
+
+p a:hover {
+  color: var(--colorBackground);
+}
+
+.frontend {
+  color: #e51b3e;
+  text-shadow: 0 0 15px rgba(229, 27, 62, 0.5), 0 0 10px rgba(229, 27, 62, 0.5),
+    2px 2px 2px rgba(229, 27, 62, 0);
+}
+
+.pipe {
+  color: #33bb69;
+}
+
+/* Login Fim */
+
+@media (max-width: 500px) {
+  .card {
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+
+  .tituloCards {
+    font-size: 3rem;
+  }
+
+  section.github {
+    flex-direction: column;
+  }
+
+  .cardAluno1 {
+    margin: 10px;
+  }
+
+  .cardAluno2 {
+    margin: 10px;
+  }
+
+  .cardAluno3 {
+    margin: 10px;
+  }
+
+  section.banner {
+    font-size: 1.2rem;
+  }
+
+  header {
+    flex-direction: column;
+  }
+
+  .botoes {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media only screen and (max-width: 428px) {
+  .logo {
+    margin-top: 20px;
+  }
+
+  ul.menu a {
+    display: flex;
+    font-size: 1.8rem;
+    padding: 8px;
+  }
+
+  ul.menu {
+    padding: 0;
+  }
+
+  section.banner {
+    font-size: 1.4rem;
+    padding: 20px;
+  }
+
+  header {
+    flex-direction: column;
+    height: 20vh;
+  }
+
+  div.tituloPrincipal {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .descricao {
+    padding-bottom: 30px;
+  }
+
+  .card {
+    width: 95%;
+    height: 750px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+
+  .card-title {
+    font-size: 2.5rem;
+  }
+
+  .card-text {
+    font-size: 1.4rem;
+    height: 260px;
+  }
+
+  .cardAluno1 {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .cardAluno2 {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .cardAluno3 {
+    text-align: center;
+    margin: 10px;
+    padding-bottom: 20px;
+  }
+
+  .cardAluno4 {
+    text-align: center;
+    margin: 10px;
+    padding-bottom: 20px;
+  }
+
+  .p-card {
+    margin-top: 10px;
+  }
+
+  .botoes {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+}@media only screen and (max-width: 428px) {
+  .logo {
+    margin-top: 20px;
+  }
+
+  ul.menu a {
+    display: flex;
+    font-size: 1.8rem;
+    padding: 8px;
+  }
+
+  ul.menu {
+    padding: 0;
+  }
+
+  section.banner {
+    font-size: 1.4rem;
+    padding: 20px;
+  }
+
+  header {
+    flex-direction: column;
+    height: 20vh;
+  }
+
+  div.tituloPrincipal {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .descricao {
+    padding-bottom: 30px;
+  }
+
+  .card {
+    width: 95%;
+    height: 750px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+
+  .card-title {
+    font-size: 2.5rem;
+  }
+
+  .card-text {
+    font-size: 1.4rem;
+    height: 260px;
+  }
+
+  .cardAluno1 {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .cardAluno2 {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .cardAluno3 {
+    text-align: center;
+    margin: 10px;
+    padding-bottom: 20px;
+  }
+
+  .cardAluno4 {
+    text-align: center;
+    margin: 10px;
+    padding-bottom: 20px;
+  }
+
+  .p-card {
+    margin-top: 10px;
+  }
+
+  .botoes {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

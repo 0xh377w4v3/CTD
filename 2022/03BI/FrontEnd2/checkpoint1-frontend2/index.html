@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./scripts/script.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon_io/guitar.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon_io/guitar.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon_io/guitar.png">
+  <link rel="manifest" href="./img/favicon_io/site.webmanifest">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/styleDetalhes.css">
+  <title>MusicFlix</title>
+
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+      <!-- <img src="/img/logo_dh.svg" alt=""> -->
+      <a href="https://www.digitalhouse.com/br/produtos/programacao/certified-tech-developer" target="_blank"><img class="logo-mobile" src="/img/logo_dh.svg" alt=""></a>
+    </div>
+
+    <ul class="menu">
+      <li class="list"><a id="colorRed" href="#" >Home</a></li>
+      <li class="list"><a class="list" href="#itens">Itens</a></li>
+      <li class="list"><a class="list" href="#aboutUs">Sobre Nós</a></li>
+      <li class="list"><a class="list" href="#login">Login</a></li>
+    </ul>
+  </header>
+
+  <section class="banner">
+    <div>
+      <h1>Music Flix</h1>
+    </div>
+
+    <div class="descricao">
+      <p>Confira a maior coletânia de músicas que a Digital House tem para oferecer</p>
+    </div>
+
+    <div class="botoes">
+      <a href="#itens" type="button" class="btn-explorer btn btn-outline-success">Explorar</a>
+  
+      <button id="login" type="button" class="btn" data-bs-toggle="modal" data-bs-target="#ModalForm">
+        <span id="login">Faça o Login aqui!</span>
+      </button>
+  
+      <div class="modal fade" id="ModalForm" tabindex="-1" aria-labelledby="ModalFormLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div class="myform bg-dark">
+                <h1 class="text-center">Login</h1>
+                <form>
+                  <div class="mb-3 mt-4">
+                    <label for="exampleInputEmail1" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Senha</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                  </div>
+                  <button type="submit" class="btn btn-light mt-3">LOGIN</button>
+                  <p>Não é um membro? Registre-se agora!</p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <button type="submit" class="btn" data-bs-toggle="modal" data-bs-target="#ModalForm2">
+        <span>Adicionar banda</span>
+      </button>
+  
+      <div class="modal fade" id="ModalForm2" tabindex="-1" aria-labelledby="ModalFormLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div class="myform bg-dark">
+                <h1 class="text-center">Nova banda</h1>
+                <form class="formulario">
+                  <div class="mb-3 mt-4">
+                    <label for="exampleInputText1" class="form-label">Nome da banda</label>
+                    <input type="text" class="form-control" id="exampleInputText1" aria-describedby="emailHelp" placeholder="Informe o nome da banda">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputText2" class="form-label">Descrição</label>
+                    <input type="text" class="form-control" id="exampleInputText2" placeholder="Insira uma descrição da sua banda preferida de no máximo 500 caractéres">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputText3" class="form-label">Imagem</label>
+                    <input type="url" class="form-control" id="exampleInputText3" placeholder="Cole aqui o endereço da imagem">
+                  </div>
+                  <button id="enviar" type="submit" class="btn btn-light mt-3">Adicionar</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  
+  <p class="itens-titulo" id="itens" class="tituloCards">Itens</p>
+  
+  <section class="itens" id="itens">
+    <div class="card">
+      <img src="img/guns-n-roses.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Guns N' Roses</h5>
+        <p class="card-text">
+          Guns N' Roses is an American hard rock band formed in 1985 in Los Angeles, California. In 1987 'Appetite For
+          Destruction' became the biggest selling debut album in history.
+          The band was founded by W. Axl Rose and Izzy Stradlin', along with Tracii Guns, Rob Gardner and Ole Beich,
+          with Axl Rose being the only constant member throughout the band's history.</p>
+          <a href="./view/detalhes.html" class="btn-abrir" target="_blank">Abrir</a>
+      </div>
+    </div>
+  </section>
+
+  <footer id="aboutUs">
+    <section class="github">
+      <div class="cardAluno">
+        <h4>Jonatan Rocha</h4>
+        <p>Responsável pelo desenvolvimento da página inicial e login.</p>
+        <a href="https://www.linkedin.com/in/jonatanrocha25/" target="_blank"><img class="icon" src="img/linkedin.svg"
+            alt=""></a>
+        <a href="https://github.com/JonatanRocha2" target="_blank"><img src="img/github.png" alt=""></a>
+      </div>
+      
+      <div class="cardAluno">
+        <h4>Antonio Mesquita</h4>
+        <p>Responsável pelo desenvolvimento da página de detalhes e login.</p>
+        <a href="https://www.linkedin.com/in/-antonio-mesquita/" target="_blank"><img class="icon" src="img/linkedin.svg"
+            alt=""></a>
+        <a href="https://github.com/0xh377w4v3" target="_blank"><img src="img/github.svg" alt=""></a>
+      </div>
+    </section>
+    
+    <div class="text-footer">
+      <h2><span class="frontend">Front-end II</span><span class="pipe"> | </span>Checkpoint 1</h2>
+    </div>
+  </footer>
+
+</body>
+
+</html>
