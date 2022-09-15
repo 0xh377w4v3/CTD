@@ -5,19 +5,20 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles.css">
-  <link rel="stylesheet" href="./switch.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/style-dark.css">
+  <link rel="stylesheet" href="/css/botao-dark.css">
   <title>Aula 5 - Modificar elementos com JS </title>
 </head>
-
+  
 <body class="dark">
-
-  <h1 class="cabecalho">A família dos felinos</h1>
-
+  <h1>A família dos felinos</h1>
+  <!-- Rounded switch -->
   <label class="switch">
-    <input type="checkbox" checked>
-    <span class="slider round" onclick="ligaDesliga()"></span>
+    <input id="troca" type="checkbox" onchange="darkTheme()">
+    <span class="slider round"></span>
   </label>
+
 
   <div class="container">
     <div class="item">
@@ -83,8 +84,7 @@
       </p>
     </div>
   </div>
-
+  <script src="/scripts/app2.js"></script>
 </body>
-<script src="./app.js"></script>
 
 </html>
