@@ -4,7 +4,7 @@ const listaDeFelinos = [
     imgUrl: '/imagens/tiger.jpg',
     description:
       'O tigre (Panthera tigris) é uma das espécies da subfamília pantherine (família Felidae) pertencente ao gênero Panthera. Encontra-se apenas no continente asiático; É um predador carnívoro e é a maior espécie de felídeo do mundo, juntamente com o leão, ambos podem atingir um tamanho comparável ao de fósseis de felinos maiores.',
-    createdAt: '\n2021-06-01T23:12:11.837Z',
+    createdAt: '2021-06-01T23:12:11.837Z',
   },
   {
     title: 'Leão',
@@ -81,7 +81,7 @@ function createPage(){
     divCard.appendChild(pCard).innerText = listaDeFelinos[i].description;
 
     let dataCard = document.createElement("p");
-    pCard.appendChild(dataCard).innerText = listaDeFelinos[i].createdAt
+    divCard.appendChild(dataCard).innerText = listaDeFelinos[i].createdAt
   }
   
 }

@@ -49,6 +49,9 @@ h1 {
   margin-bottom: .2em;
   text-align: center;
 }
+.item p {
+  text-align:justify
+}
 
 
 /* ------------------------------ Estilos para o tema escuro (Dark-Mode) ----------------------------------------------- */
