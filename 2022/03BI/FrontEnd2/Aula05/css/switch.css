@@ -1,11 +1,10 @@
 .switch {
-  justify-items: center;
-  margin-top: 1.3%;
-  margin-left: 94%;
   position: relative;
   display: inline-block;
   width: 60px;
   height: 34px;
+	margin-left: 96%;
+  margin-top: 1%;
 }
 
 .switch input { 
